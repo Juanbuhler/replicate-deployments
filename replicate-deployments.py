@@ -58,7 +58,7 @@ if api_token:
                 "Hardware": current_release['configuration']['hardware'],
                 "Min Instances": current_release['configuration']['min_instances'],
                 "Max Instances": current_release['configuration']['max_instances'],
-                "Replicate URL": f"https://replicate.com/{deployment['owner']}/{deployment['name']}"
+                "Replicate URL": f"https://replicate.com/deployments/{deployment['owner']}/{deployment['name']}"
             })
 
         df = pd.DataFrame(data)
